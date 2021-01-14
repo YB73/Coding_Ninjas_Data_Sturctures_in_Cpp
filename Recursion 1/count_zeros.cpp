@@ -17,8 +17,12 @@ Sample Output
 
 int countZeros(int num) {
     // Write your code here
+    if(num<10){
     if(num == 0)
+       return 1;
+       else
        return 0;
+       
 
     if(num %10 ==0)
         return 1 + countZeros(num / 10);
